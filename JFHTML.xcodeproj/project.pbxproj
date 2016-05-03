@@ -14,6 +14,12 @@
 		A0DCD65E1CD33B450036579A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0DCD65D1CD33B450036579A /* Assets.xcassets */; };
 		A0DCD6611CD33B450036579A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0DCD65F1CD33B450036579A /* LaunchScreen.storyboard */; };
 		A0DCD66C1CD33B450036579A /* JFHTMLTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DCD66B1CD33B450036579A /* JFHTMLTests.m */; };
+		A0DCD6791CD33B850036579A /* JFHTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DCD6781CD33B850036579A /* JFHTMLParser.m */; };
+		A0DCD67B1CD33BBA0036579A /* libxml2.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A0DCD67A1CD33BBA0036579A /* libxml2.2.tbd */; };
+		A0DCD67F1CD34FDD0036579A /* JFHTML.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DCD67E1CD34FDD0036579A /* JFHTML.m */; };
+		A0DCD6821CD34FEC0036579A /* JFHTMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DCD6811CD34FEC0036579A /* JFHTMLNode.m */; };
+		A0DCD6851CD35F510036579A /* JFHTMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DCD6841CD35F510036579A /* JFHTMLElement.m */; };
+		A0DCD6891CD362F90036579A /* JFHTMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DCD6881CD362F90036579A /* JFHTMLDocument.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +46,17 @@
 		A0DCD6671CD33B450036579A /* JFHTMLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JFHTMLTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0DCD66B1CD33B450036579A /* JFHTMLTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFHTMLTests.m; sourceTree = "<group>"; };
 		A0DCD66D1CD33B450036579A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0DCD6771CD33B850036579A /* JFHTMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFHTMLParser.h; sourceTree = "<group>"; };
+		A0DCD6781CD33B850036579A /* JFHTMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFHTMLParser.m; sourceTree = "<group>"; };
+		A0DCD67A1CD33BBA0036579A /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
+		A0DCD67D1CD34FDD0036579A /* JFHTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFHTML.h; sourceTree = "<group>"; };
+		A0DCD67E1CD34FDD0036579A /* JFHTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFHTML.m; sourceTree = "<group>"; };
+		A0DCD6801CD34FEC0036579A /* JFHTMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFHTMLNode.h; sourceTree = "<group>"; };
+		A0DCD6811CD34FEC0036579A /* JFHTMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFHTMLNode.m; sourceTree = "<group>"; };
+		A0DCD6831CD35F510036579A /* JFHTMLElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFHTMLElement.h; sourceTree = "<group>"; };
+		A0DCD6841CD35F510036579A /* JFHTMLElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFHTMLElement.m; sourceTree = "<group>"; };
+		A0DCD6871CD362F90036579A /* JFHTMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFHTMLDocument.h; sourceTree = "<group>"; };
+		A0DCD6881CD362F90036579A /* JFHTMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFHTMLDocument.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0DCD67B1CD33BBA0036579A /* libxml2.2.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +81,7 @@
 		A0DCD6451CD33B450036579A = {
 			isa = PBXGroup;
 			children = (
+				A0DCD67A1CD33BBA0036579A /* libxml2.2.tbd */,
 				A0DCD6501CD33B450036579A /* JFHTML */,
 				A0DCD66A1CD33B450036579A /* JFHTMLTests */,
 				A0DCD64F1CD33B450036579A /* Products */,
@@ -81,6 +100,8 @@
 		A0DCD6501CD33B450036579A /* JFHTML */ = {
 			isa = PBXGroup;
 			children = (
+				A0DCD67C1CD34FCF0036579A /* JFHTML */,
+				A0DCD6761CD33B740036579A /* JFHTMLParser */,
 				A0DCD6541CD33B450036579A /* AppDelegate.h */,
 				A0DCD6551CD33B450036579A /* AppDelegate.m */,
 				A0DCD6571CD33B450036579A /* ViewController.h */,
@@ -109,6 +130,30 @@
 				A0DCD66D1CD33B450036579A /* Info.plist */,
 			);
 			path = JFHTMLTests;
+			sourceTree = "<group>";
+		};
+		A0DCD6761CD33B740036579A /* JFHTMLParser */ = {
+			isa = PBXGroup;
+			children = (
+				A0DCD6771CD33B850036579A /* JFHTMLParser.h */,
+				A0DCD6781CD33B850036579A /* JFHTMLParser.m */,
+			);
+			path = JFHTMLParser;
+			sourceTree = "<group>";
+		};
+		A0DCD67C1CD34FCF0036579A /* JFHTML */ = {
+			isa = PBXGroup;
+			children = (
+				A0DCD67D1CD34FDD0036579A /* JFHTML.h */,
+				A0DCD67E1CD34FDD0036579A /* JFHTML.m */,
+				A0DCD6801CD34FEC0036579A /* JFHTMLNode.h */,
+				A0DCD6811CD34FEC0036579A /* JFHTMLNode.m */,
+				A0DCD6831CD35F510036579A /* JFHTMLElement.h */,
+				A0DCD6841CD35F510036579A /* JFHTMLElement.m */,
+				A0DCD6871CD362F90036579A /* JFHTMLDocument.h */,
+				A0DCD6881CD362F90036579A /* JFHTMLDocument.m */,
+			);
+			path = JFHTML;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,8 +257,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0DCD6591CD33B450036579A /* ViewController.m in Sources */,
+				A0DCD67F1CD34FDD0036579A /* JFHTML.m in Sources */,
+				A0DCD6821CD34FEC0036579A /* JFHTMLNode.m in Sources */,
 				A0DCD6561CD33B450036579A /* AppDelegate.m in Sources */,
 				A0DCD6531CD33B450036579A /* main.m in Sources */,
+				A0DCD6851CD35F510036579A /* JFHTMLElement.m in Sources */,
+				A0DCD6791CD33B850036579A /* JFHTMLParser.m in Sources */,
+				A0DCD6891CD362F90036579A /* JFHTMLDocument.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +393,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
 				INFOPLIST_FILE = JFHTML/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = top.shujiong.JFHTML;
@@ -354,6 +405,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
 				INFOPLIST_FILE = JFHTML/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = top.shujiong.JFHTML;
