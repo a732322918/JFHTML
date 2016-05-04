@@ -37,6 +37,8 @@
     if (self) {
         _data = data;
         _group = dispatch_group_create();
+        
+        _baseFontSize = 17;
     }
     return self;
 }
@@ -64,7 +66,7 @@
 - (void)parserDidStartDocument:(JFHTMLParser *)parser {
     _builtString = [[NSMutableAttributedString alloc] init];
     _rootElement = [JFHTMLElement new];
-    _rootElement.fontSize = 14;
+    _rootElement.fontSize = self.baseFontSize;
     _currentElement = _rootElement;
 }
 
@@ -81,8 +83,23 @@
         _currentElement = newElement;
     }
     
+    if ([elementName isEqualToString:@"h1"]) {
+        newElement.headerLevel = 1;
+    }
+    if ([elementName isEqualToString:@"h2"]) {
+        newElement.headerLevel = 2;
+    }
     if ([elementName isEqualToString:@"h3"]) {
         newElement.headerLevel = 3;
+    }
+    if ([elementName isEqualToString:@"h4"]) {
+        newElement.headerLevel = 4;
+    }
+    if ([elementName isEqualToString:@"h5"]) {
+        newElement.headerLevel = 5;
+    }
+    if ([elementName isEqualToString:@"h6"]) {
+        newElement.headerLevel = 6;
     }
 }
 

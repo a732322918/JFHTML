@@ -10,6 +10,8 @@
 
 @interface JFHTMLAttributedStringBuilder : NSObject
 
+@property (nonatomic, assign) NSInteger baseFontSize;
+
 - (instancetype)initWithHTML:(NSData *)data;
 
 - (NSAttributedString *)build;

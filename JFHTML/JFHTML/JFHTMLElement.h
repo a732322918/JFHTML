@@ -16,6 +16,8 @@
 
 @property (nonatomic, assign) CGFloat fontSize;
 
+@property (nonatomic, strong) NSMutableParagraphStyle *paragraphStyle;
+
 - (NSDictionary *)attributesForAttributedStringRepresentation;
 
 - (void)inheritAttributesFromElement:(JFHTMLElement *)element;

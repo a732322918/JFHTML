@@ -57,6 +57,15 @@
     
 }
 
+- (void)testSqart {
+    NSLog(@"%f", 2/sqrt(1));
+    NSLog(@"%f", 2/sqrt(2));
+    NSLog(@"%f", 2/sqrt(3));
+    NSLog(@"%f", 2/sqrt(4));
+    NSLog(@"%f", 2/sqrt(5));
+    NSLog(@"%f", 2/sqrt(6));
+}
+
 - (void)testPerformanceExample {
     // This is an example of a performance test case.
     [self measureBlock:^{
