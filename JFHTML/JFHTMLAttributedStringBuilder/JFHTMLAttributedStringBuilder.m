@@ -23,6 +23,8 @@
     JFHTMLElement *_currentElement;
     JFHTMLElement *_previousElement;
     
+    JFHTMLElement *_pendingElement;
+    
     dispatch_group_t _group;
 }
 
@@ -68,32 +70,52 @@
 
 - (void)parser:(JFHTMLParser *)parser didStartElement:(NSString *)elementName attributes:(NSDictionary *)attributeDict {
     JFHTMLElement *newElement = [JFHTMLElement elementWithName:elementName attributes:attributeDict];
-    
-    
     [newElement inheritAttributesFromElement:_currentElement];
+    
+
+    if ([newElement isKindOfClass:[JFHTMLBreakElement class]]) {
+        _pendingElement = newElement;
+    }
+    else {
+        [_currentElement addChildNode:newElement];
+        _currentElement = newElement;
+    }
+    
     if ([elementName isEqualToString:@"h3"]) {
         newElement.headerLevel = 3;
     }
-    [_currentElement addChildNode:newElement];
-    
-    _currentElement = newElement;
 }
 
 - (void)parser:(JFHTMLParser *)parser didEndElement:(NSString *)elementName {
-    while (![_currentElement.name isEqualToString:elementName] && _currentElement)
-    {
-        // missing end of element, attempt to recover
-        _currentElement = (JFHTMLElement*)[_currentElement parentNode];
+    
+    if (_pendingElement) {
+        [_currentElement addChildNode:_pendingElement];
+        _pendingElement = nil;
     }
-    _currentElement = (JFHTMLElement*)_currentElement.parentNode;
+    else {
+        while (![_currentElement.name isEqualToString:elementName] && _currentElement)
+        {
+            _currentElement = (JFHTMLElement*)[_currentElement parentNode];
+        }
+        _currentElement = (JFHTMLElement*)_currentElement.parentNode;
+    }
+    
+    
+    
+    
 }
 
 - (void)parser:(JFHTMLParser *)parser foundCharacters:(NSString *)string {
-    
     JFHTMLTextElement *textElement = [[JFHTMLTextElement alloc] init];
     textElement.text = string;
-    [textElement inheritAttributesFromElement:_currentElement];
-    [_currentElement addChildNode:textElement];
+//    NSLog(@"%@", textElement.attributedString);
+    
+    JFHTMLElement *node = _currentElement;
+//    if ([node isKindOfClass:[JFHTMLBreakElement class]]) {
+//        node = (JFHTMLElement*)_currentElement.parentNode;
+//    }
+    [textElement inheritAttributesFromElement:node];
+    [node addChildNode:textElement];
 }
 
 - (void)parserDidEndDocument:(JFHTMLParser *)parser {

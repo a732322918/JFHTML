@@ -70,11 +70,11 @@
         NSAttributedString *attributedString = [element attributedString];
     
         [builtString appendAttributedString:attributedString];
-        if ([element isKindOfClass:[JFHTMLBreakElement class]]) {
-            [builtString appendAttributedString:[[NSAttributedString alloc] initWithString:@"\n"]];
-        }
+//        if ([element isKindOfClass:[JFHTMLBreakElement class]]) {
+//            [builtString appendAttributedString:[[NSAttributedString alloc] initWithString:@"\n"]];
+//        }
         
-        if (element.headerLevel > 0) {
+        if ([element.name isEqualToString:@"h3"]) {
             [builtString appendAttributedString:[[NSAttributedString alloc] initWithString:@"\n"]];
         }
         
@@ -84,6 +84,25 @@
     }
     
     return builtString;
+}
+
+- (NSString *)description {
+    NSString *result = @"";
+    NSUInteger indentLevel = 0;
+    for (JFHTMLElement *element in self.childNodes) {
+        
+        NSString *placeholder = @"";
+        for (int i = 0; i < indentLevel; i++) {
+            placeholder = [placeholder stringByAppendingString:@"   "];
+        }
+        
+        result = [result stringByAppendingString:placeholder];
+        result = [result stringByAppendingString:element.name];
+        result = [result stringByAppendingString:element.description];
+        indentLevel++;
+    }
+    
+    return result;
 }
 
 @end

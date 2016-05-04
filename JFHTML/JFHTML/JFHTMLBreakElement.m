@@ -10,9 +10,9 @@
 
 @implementation JFHTMLBreakElement
 
-//- (NSAttributedString *)attributedString {
-//    NSDictionary *attributes = [self attributesForAttributedStringRepresentation];
-//    return [[NSAttributedString alloc] initWithString:@"\u2028" attributes:attributes];
-//}
+- (NSAttributedString *)attributedString {
+    NSDictionary *attributes = [self attributesForAttributedStringRepresentation];
+    return [[NSAttributedString alloc] initWithString:@"\u2028" attributes:attributes];
+}
 
 @end
