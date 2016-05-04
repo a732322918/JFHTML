@@ -6,8 +6,22 @@
 //  Copyright © 2016年 shujiong. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "JFHTMLNode.h"
 
-@interface JFHTMLElement : NSObject
+@interface JFHTMLElement : JFHTMLNode
+
++ (instancetype)elementWithName:(NSString *)name attributes:(NSDictionary *)attributes;
+
+@property (nonatomic, assign) NSUInteger headerLevel;
+
+@property (nonatomic, assign) CGFloat fontSize;
+
+- (NSDictionary *)attributesForAttributedStringRepresentation;
+
+- (void)inheritAttributesFromElement:(JFHTMLElement *)element;
+
+- (void)applyStyleDictionary:(NSDictionary *)styles;
+
+- (NSAttributedString *)attributedString;
 
 @end

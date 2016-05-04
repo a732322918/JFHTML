@@ -7,6 +7,8 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "JFHTMLElement.h"
+#import "JFHTMLTextElement.h"
 
 @interface JFHTMLTests : XCTestCase
 
@@ -25,8 +27,34 @@
 }
 
 - (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+    JFHTMLElement *p = [JFHTMLElement elementWithName:@"p" attributes:@{@"font-size": @"14px",
+                                                                        @"color": @"#333333"}];
+    XCTAssert(p);
+    NSLog(@"%@", p.attributes);
+    
+    JFHTMLElement *p2 = [JFHTMLElement elementWithName:@"p2" attributes:@{@"font-size": @"12px"}];
+    [p2 inheritAttributesFromElement:p];
+    XCTAssert(p2.attributes[@"color"]);
+}
+
+- (void)testGenerateAttributedString {
+    JFHTMLElement *p = [JFHTMLElement elementWithName:@"p" attributes:@{@"font-size": @"14px",
+                                                                        @"color": @"#333333"}];
+    XCTAssert(p.attributedString.length == 0);
+    
+    JFHTMLTextElement *text = [[JFHTMLTextElement alloc] init];
+    text.text = @"Hello";
+    
+    [text inheritAttributesFromElement:p];
+    
+    [p addChildNode:text];
+    
+    NSLog(@"%@", p.attributedString);
+    
+}
+
+- (void)testHtmlTag {
+    
 }
 
 - (void)testPerformanceExample {

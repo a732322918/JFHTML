@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A062EF7C1CD9874000EBD3E4 /* JFHTMLBreakElement.m in Sources */ = {isa = PBXBuildFile; fileRef = A062EF7B1CD9874000EBD3E4 /* JFHTMLBreakElement.m */; };
 		A0DCD6531CD33B450036579A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DCD6521CD33B450036579A /* main.m */; };
 		A0DCD6561CD33B450036579A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DCD6551CD33B450036579A /* AppDelegate.m */; };
 		A0DCD6591CD33B450036579A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DCD6581CD33B450036579A /* ViewController.m */; };
@@ -20,6 +21,8 @@
 		A0DCD6821CD34FEC0036579A /* JFHTMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DCD6811CD34FEC0036579A /* JFHTMLNode.m */; };
 		A0DCD6851CD35F510036579A /* JFHTMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DCD6841CD35F510036579A /* JFHTMLElement.m */; };
 		A0DCD6891CD362F90036579A /* JFHTMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DCD6881CD362F90036579A /* JFHTMLDocument.m */; };
+		A0FBAF811CD879DF006E0A8C /* JFHTMLAttributedStringBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FBAF801CD879DF006E0A8C /* JFHTMLAttributedStringBuilder.m */; };
+		A0FBAF841CD8A0BE006E0A8C /* JFHTMLTextElement.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FBAF831CD8A0BE006E0A8C /* JFHTMLTextElement.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A062EF7A1CD9874000EBD3E4 /* JFHTMLBreakElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFHTMLBreakElement.h; sourceTree = "<group>"; };
+		A062EF7B1CD9874000EBD3E4 /* JFHTMLBreakElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFHTMLBreakElement.m; sourceTree = "<group>"; };
 		A0DCD64E1CD33B450036579A /* JFHTML.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JFHTML.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0DCD6521CD33B450036579A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A0DCD6541CD33B450036579A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -57,6 +62,10 @@
 		A0DCD6841CD35F510036579A /* JFHTMLElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFHTMLElement.m; sourceTree = "<group>"; };
 		A0DCD6871CD362F90036579A /* JFHTMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFHTMLDocument.h; sourceTree = "<group>"; };
 		A0DCD6881CD362F90036579A /* JFHTMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFHTMLDocument.m; sourceTree = "<group>"; };
+		A0FBAF7F1CD879DF006E0A8C /* JFHTMLAttributedStringBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFHTMLAttributedStringBuilder.h; sourceTree = "<group>"; };
+		A0FBAF801CD879DF006E0A8C /* JFHTMLAttributedStringBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFHTMLAttributedStringBuilder.m; sourceTree = "<group>"; };
+		A0FBAF821CD8A0BE006E0A8C /* JFHTMLTextElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFHTMLTextElement.h; sourceTree = "<group>"; };
+		A0FBAF831CD8A0BE006E0A8C /* JFHTMLTextElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFHTMLTextElement.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +109,7 @@
 		A0DCD6501CD33B450036579A /* JFHTML */ = {
 			isa = PBXGroup;
 			children = (
+				A0FBAF7E1CD879C7006E0A8C /* JFHTMLAttributedStringBuilder */,
 				A0DCD67C1CD34FCF0036579A /* JFHTML */,
 				A0DCD6761CD33B740036579A /* JFHTMLParser */,
 				A0DCD6541CD33B450036579A /* AppDelegate.h */,
@@ -144,16 +154,29 @@
 		A0DCD67C1CD34FCF0036579A /* JFHTML */ = {
 			isa = PBXGroup;
 			children = (
+				A0DCD6871CD362F90036579A /* JFHTMLDocument.h */,
+				A0DCD6881CD362F90036579A /* JFHTMLDocument.m */,
 				A0DCD67D1CD34FDD0036579A /* JFHTML.h */,
 				A0DCD67E1CD34FDD0036579A /* JFHTML.m */,
 				A0DCD6801CD34FEC0036579A /* JFHTMLNode.h */,
 				A0DCD6811CD34FEC0036579A /* JFHTMLNode.m */,
 				A0DCD6831CD35F510036579A /* JFHTMLElement.h */,
 				A0DCD6841CD35F510036579A /* JFHTMLElement.m */,
-				A0DCD6871CD362F90036579A /* JFHTMLDocument.h */,
-				A0DCD6881CD362F90036579A /* JFHTMLDocument.m */,
+				A0FBAF821CD8A0BE006E0A8C /* JFHTMLTextElement.h */,
+				A0FBAF831CD8A0BE006E0A8C /* JFHTMLTextElement.m */,
+				A062EF7A1CD9874000EBD3E4 /* JFHTMLBreakElement.h */,
+				A062EF7B1CD9874000EBD3E4 /* JFHTMLBreakElement.m */,
 			);
 			path = JFHTML;
+			sourceTree = "<group>";
+		};
+		A0FBAF7E1CD879C7006E0A8C /* JFHTMLAttributedStringBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				A0FBAF7F1CD879DF006E0A8C /* JFHTMLAttributedStringBuilder.h */,
+				A0FBAF801CD879DF006E0A8C /* JFHTMLAttributedStringBuilder.m */,
+			);
+			path = JFHTMLAttributedStringBuilder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,8 +285,11 @@
 				A0DCD6561CD33B450036579A /* AppDelegate.m in Sources */,
 				A0DCD6531CD33B450036579A /* main.m in Sources */,
 				A0DCD6851CD35F510036579A /* JFHTMLElement.m in Sources */,
+				A062EF7C1CD9874000EBD3E4 /* JFHTMLBreakElement.m in Sources */,
 				A0DCD6791CD33B850036579A /* JFHTMLParser.m in Sources */,
 				A0DCD6891CD362F90036579A /* JFHTMLDocument.m in Sources */,
+				A0FBAF841CD8A0BE006E0A8C /* JFHTMLTextElement.m in Sources */,
+				A0FBAF811CD879DF006E0A8C /* JFHTMLAttributedStringBuilder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +482,7 @@
 				A0DCD6721CD33B450036579A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A0DCD6731CD33B450036579A /* Build configuration list for PBXNativeTarget "JFHTMLTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +491,7 @@
 				A0DCD6751CD33B450036579A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
