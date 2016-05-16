@@ -10,7 +10,6 @@
 
 @interface JFAttributedLabel : UIView
 
-// 1
+@property (nonatomic, strong) NSAttributedString *attributedText;
 
-// 来自JFHtml
 @end

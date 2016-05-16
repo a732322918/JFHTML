@@ -9,7 +9,5 @@
 #import "JFLayoutManager.h"
 
 @implementation JFLayoutManager
-{
-//    UILabel
-}
+
 @end

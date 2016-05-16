@@ -17,6 +17,7 @@
 		A07A85331CE9AD3B00177E83 /* JFTextContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = A07A852B1CE9AD3B00177E83 /* JFTextContainer.m */; };
 		A07A85341CE9AD3B00177E83 /* JFTextKitDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = A07A852D1CE9AD3B00177E83 /* JFTextKitDefines.m */; };
 		A07A85351CE9AD3B00177E83 /* JFTextStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = A07A852F1CE9AD3B00177E83 /* JFTextStorage.m */; };
+		A07A853B1CE9C87300177E83 /* JFTextLink.m in Sources */ = {isa = PBXBuildFile; fileRef = A07A853A1CE9C87300177E83 /* JFTextLink.m */; };
 		A0DCD6531CD33B450036579A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DCD6521CD33B450036579A /* main.m */; };
 		A0DCD6561CD33B450036579A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DCD6551CD33B450036579A /* AppDelegate.m */; };
 		A0DCD6591CD33B450036579A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DCD6581CD33B450036579A /* ViewController.m */; };
@@ -65,6 +66,8 @@
 		A07A852D1CE9AD3B00177E83 /* JFTextKitDefines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFTextKitDefines.m; sourceTree = "<group>"; };
 		A07A852E1CE9AD3B00177E83 /* JFTextStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFTextStorage.h; sourceTree = "<group>"; };
 		A07A852F1CE9AD3B00177E83 /* JFTextStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFTextStorage.m; sourceTree = "<group>"; };
+		A07A85391CE9C87300177E83 /* JFTextLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFTextLink.h; sourceTree = "<group>"; };
+		A07A853A1CE9C87300177E83 /* JFTextLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFTextLink.m; sourceTree = "<group>"; };
 		A0DCD64E1CD33B450036579A /* JFHTML.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JFHTML.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0DCD6521CD33B450036579A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A0DCD6541CD33B450036579A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -135,6 +138,8 @@
 		A07A85231CE9AD3B00177E83 /* JFTextKit */ = {
 			isa = PBXGroup;
 			children = (
+				A07A85391CE9C87300177E83 /* JFTextLink.h */,
+				A07A853A1CE9C87300177E83 /* JFTextLink.m */,
 				A07A85241CE9AD3B00177E83 /* JFAttributedLabel.h */,
 				A07A85251CE9AD3B00177E83 /* JFAttributedLabel.m */,
 				A07A85261CE9AD3B00177E83 /* JFLayoutManager.h */,
@@ -360,6 +365,7 @@
 				A0DCD6851CD35F510036579A /* JFHTMLElement.m in Sources */,
 				A062EF7C1CD9874000EBD3E4 /* JFHTMLBreakElement.m in Sources */,
 				A07A85331CE9AD3B00177E83 /* JFTextContainer.m in Sources */,
+				A07A853B1CE9C87300177E83 /* JFTextLink.m in Sources */,
 				A062EF821CD9DED300EBD3E4 /* DTHTMLParser.m in Sources */,
 				A0DCD6791CD33B850036579A /* JFHTMLParser.m in Sources */,
 				A0DCD6891CD362F90036579A /* JFHTMLDocument.m in Sources */,
