@@ -11,6 +11,12 @@
 		A062EF7C1CD9874000EBD3E4 /* JFHTMLBreakElement.m in Sources */ = {isa = PBXBuildFile; fileRef = A062EF7B1CD9874000EBD3E4 /* JFHTMLBreakElement.m */; };
 		A062EF821CD9DED300EBD3E4 /* DTHTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = A062EF811CD9DED300EBD3E4 /* DTHTMLParser.m */; };
 		A062EF851CD9EA7800EBD3E4 /* JFHTMLTextAttachmentElement.m in Sources */ = {isa = PBXBuildFile; fileRef = A062EF841CD9EA7800EBD3E4 /* JFHTMLTextAttachmentElement.m */; };
+		A07A84CF1CE9A76100177E83 /* JFAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = A07A84C41CE9A76100177E83 /* JFAttributedLabel.m */; };
+		A07A84D01CE9A76100177E83 /* JFLayoutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A07A84C61CE9A76100177E83 /* JFLayoutManager.m */; };
+		A07A84D11CE9A76100177E83 /* JFTextAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = A07A84C81CE9A76100177E83 /* JFTextAttachment.m */; };
+		A07A84D21CE9A76100177E83 /* JFTextContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = A07A84CA1CE9A76100177E83 /* JFTextContainer.m */; };
+		A07A84D31CE9A76100177E83 /* JFTextKitDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = A07A84CC1CE9A76100177E83 /* JFTextKitDefines.m */; };
+		A07A84D41CE9A76100177E83 /* JFTextStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = A07A84CE1CE9A76100177E83 /* JFTextStorage.m */; };
 		A0DCD6531CD33B450036579A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DCD6521CD33B450036579A /* main.m */; };
 		A0DCD6561CD33B450036579A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DCD6551CD33B450036579A /* AppDelegate.m */; };
 		A0DCD6591CD33B450036579A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DCD6581CD33B450036579A /* ViewController.m */; };
@@ -24,12 +30,6 @@
 		A0DCD6821CD34FEC0036579A /* JFHTMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DCD6811CD34FEC0036579A /* JFHTMLNode.m */; };
 		A0DCD6851CD35F510036579A /* JFHTMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DCD6841CD35F510036579A /* JFHTMLElement.m */; };
 		A0DCD6891CD362F90036579A /* JFHTMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DCD6881CD362F90036579A /* JFHTMLDocument.m */; };
-		A0F7C7711CDCA0110034489E /* JFAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F7C7701CDCA0110034489E /* JFAttributedLabel.m */; };
-		A0F7C7751CDCA0400034489E /* JFTextAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F7C7741CDCA0400034489E /* JFTextAttachment.m */; };
-		A0F7C7781CDCA08B0034489E /* JFTextStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F7C7771CDCA08B0034489E /* JFTextStorage.m */; };
-		A0F7C77B1CDCA0A50034489E /* JFLayoutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F7C77A1CDCA0A50034489E /* JFLayoutManager.m */; };
-		A0F7C77E1CDCA0EF0034489E /* JFTextContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F7C77D1CDCA0EF0034489E /* JFTextContainer.m */; };
-		A0F7C7811CDCA11C0034489E /* JFTextKitDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F7C7801CDCA11C0034489E /* JFTextKitDefines.m */; };
 		A0FBAF811CD879DF006E0A8C /* JFHTMLAttributedStringBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FBAF801CD879DF006E0A8C /* JFHTMLAttributedStringBuilder.m */; };
 		A0FBAF841CD8A0BE006E0A8C /* JFHTMLTextElement.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FBAF831CD8A0BE006E0A8C /* JFHTMLTextElement.m */; };
 /* End PBXBuildFile section */
@@ -53,6 +53,18 @@
 		A062EF811CD9DED300EBD3E4 /* DTHTMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTHTMLParser.m; sourceTree = "<group>"; };
 		A062EF831CD9EA7800EBD3E4 /* JFHTMLTextAttachmentElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFHTMLTextAttachmentElement.h; sourceTree = "<group>"; };
 		A062EF841CD9EA7800EBD3E4 /* JFHTMLTextAttachmentElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFHTMLTextAttachmentElement.m; sourceTree = "<group>"; };
+		A07A84C31CE9A76100177E83 /* JFAttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFAttributedLabel.h; sourceTree = "<group>"; };
+		A07A84C41CE9A76100177E83 /* JFAttributedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFAttributedLabel.m; sourceTree = "<group>"; };
+		A07A84C51CE9A76100177E83 /* JFLayoutManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFLayoutManager.h; sourceTree = "<group>"; };
+		A07A84C61CE9A76100177E83 /* JFLayoutManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFLayoutManager.m; sourceTree = "<group>"; };
+		A07A84C71CE9A76100177E83 /* JFTextAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFTextAttachment.h; sourceTree = "<group>"; };
+		A07A84C81CE9A76100177E83 /* JFTextAttachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFTextAttachment.m; sourceTree = "<group>"; };
+		A07A84C91CE9A76100177E83 /* JFTextContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFTextContainer.h; sourceTree = "<group>"; };
+		A07A84CA1CE9A76100177E83 /* JFTextContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFTextContainer.m; sourceTree = "<group>"; };
+		A07A84CB1CE9A76100177E83 /* JFTextKitDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFTextKitDefines.h; sourceTree = "<group>"; };
+		A07A84CC1CE9A76100177E83 /* JFTextKitDefines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFTextKitDefines.m; sourceTree = "<group>"; };
+		A07A84CD1CE9A76100177E83 /* JFTextStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFTextStorage.h; sourceTree = "<group>"; };
+		A07A84CE1CE9A76100177E83 /* JFTextStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFTextStorage.m; sourceTree = "<group>"; };
 		A0DCD64E1CD33B450036579A /* JFHTML.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JFHTML.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0DCD6521CD33B450036579A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A0DCD6541CD33B450036579A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -77,18 +89,6 @@
 		A0DCD6841CD35F510036579A /* JFHTMLElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFHTMLElement.m; sourceTree = "<group>"; };
 		A0DCD6871CD362F90036579A /* JFHTMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFHTMLDocument.h; sourceTree = "<group>"; };
 		A0DCD6881CD362F90036579A /* JFHTMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFHTMLDocument.m; sourceTree = "<group>"; };
-		A0F7C76F1CDCA0110034489E /* JFAttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JFAttributedLabel.h; path = JFTextKit/JFAttributedLabel.h; sourceTree = "<group>"; };
-		A0F7C7701CDCA0110034489E /* JFAttributedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JFAttributedLabel.m; path = JFTextKit/JFAttributedLabel.m; sourceTree = "<group>"; };
-		A0F7C7731CDCA0400034489E /* JFTextAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JFTextAttachment.h; path = JFTextKit/JFTextAttachment.h; sourceTree = "<group>"; };
-		A0F7C7741CDCA0400034489E /* JFTextAttachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JFTextAttachment.m; path = JFTextKit/JFTextAttachment.m; sourceTree = "<group>"; };
-		A0F7C7761CDCA08B0034489E /* JFTextStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JFTextStorage.h; path = JFTextKit/JFTextStorage.h; sourceTree = "<group>"; };
-		A0F7C7771CDCA08B0034489E /* JFTextStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JFTextStorage.m; path = JFTextKit/JFTextStorage.m; sourceTree = "<group>"; };
-		A0F7C7791CDCA0A50034489E /* JFLayoutManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JFLayoutManager.h; path = JFTextKit/JFLayoutManager.h; sourceTree = "<group>"; };
-		A0F7C77A1CDCA0A50034489E /* JFLayoutManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JFLayoutManager.m; path = JFTextKit/JFLayoutManager.m; sourceTree = "<group>"; };
-		A0F7C77C1CDCA0EF0034489E /* JFTextContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JFTextContainer.h; path = JFTextKit/JFTextContainer.h; sourceTree = "<group>"; };
-		A0F7C77D1CDCA0EF0034489E /* JFTextContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JFTextContainer.m; path = JFTextKit/JFTextContainer.m; sourceTree = "<group>"; };
-		A0F7C77F1CDCA11C0034489E /* JFTextKitDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JFTextKitDefines.h; path = JFTextKit/JFTextKitDefines.h; sourceTree = "<group>"; };
-		A0F7C7801CDCA11C0034489E /* JFTextKitDefines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JFTextKitDefines.m; path = JFTextKit/JFTextKitDefines.m; sourceTree = "<group>"; };
 		A0FBAF7F1CD879DF006E0A8C /* JFHTMLAttributedStringBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFHTMLAttributedStringBuilder.h; sourceTree = "<group>"; };
 		A0FBAF801CD879DF006E0A8C /* JFHTMLAttributedStringBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFHTMLAttributedStringBuilder.m; sourceTree = "<group>"; };
 		A0FBAF821CD8A0BE006E0A8C /* JFHTMLTextElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFHTMLTextElement.h; sourceTree = "<group>"; };
@@ -132,6 +132,25 @@
 			path = DTHTMLParser;
 			sourceTree = "<group>";
 		};
+		A07A84C21CE9A76100177E83 /* JFTextKit */ = {
+			isa = PBXGroup;
+			children = (
+				A07A84C31CE9A76100177E83 /* JFAttributedLabel.h */,
+				A07A84C41CE9A76100177E83 /* JFAttributedLabel.m */,
+				A07A84C51CE9A76100177E83 /* JFLayoutManager.h */,
+				A07A84C61CE9A76100177E83 /* JFLayoutManager.m */,
+				A07A84C71CE9A76100177E83 /* JFTextAttachment.h */,
+				A07A84C81CE9A76100177E83 /* JFTextAttachment.m */,
+				A07A84C91CE9A76100177E83 /* JFTextContainer.h */,
+				A07A84CA1CE9A76100177E83 /* JFTextContainer.m */,
+				A07A84CB1CE9A76100177E83 /* JFTextKitDefines.h */,
+				A07A84CC1CE9A76100177E83 /* JFTextKitDefines.m */,
+				A07A84CD1CE9A76100177E83 /* JFTextStorage.h */,
+				A07A84CE1CE9A76100177E83 /* JFTextStorage.m */,
+			);
+			path = JFTextKit;
+			sourceTree = "<group>";
+		};
 		A0DCD6451CD33B450036579A = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +173,7 @@
 		A0DCD6501CD33B450036579A /* JFHTML */ = {
 			isa = PBXGroup;
 			children = (
+				A07A84C21CE9A76100177E83 /* JFTextKit */,
 				A02BADF91CE1CC2700E67A7C /* NSAttributedString+DDHTML */,
 				A062EF7F1CD9DED300EBD3E4 /* DTHTMLParser */,
 				A0FBAF7E1CD879C7006E0A8C /* JFHTMLAttributedStringBuilder */,
@@ -168,7 +188,6 @@
 				A0DCD65F1CD33B450036579A /* LaunchScreen.storyboard */,
 				A0DCD6621CD33B450036579A /* Info.plist */,
 				A0DCD6511CD33B450036579A /* Supporting Files */,
-				A0F7C7721CDCA0180034489E /* JFTextKit */,
 			);
 			path = JFHTML;
 			sourceTree = "<group>";
@@ -218,25 +237,6 @@
 				A062EF841CD9EA7800EBD3E4 /* JFHTMLTextAttachmentElement.m */,
 			);
 			path = JFHTML;
-			sourceTree = "<group>";
-		};
-		A0F7C7721CDCA0180034489E /* JFTextKit */ = {
-			isa = PBXGroup;
-			children = (
-				A0F7C76F1CDCA0110034489E /* JFAttributedLabel.h */,
-				A0F7C7701CDCA0110034489E /* JFAttributedLabel.m */,
-				A0F7C7731CDCA0400034489E /* JFTextAttachment.h */,
-				A0F7C7741CDCA0400034489E /* JFTextAttachment.m */,
-				A0F7C7761CDCA08B0034489E /* JFTextStorage.h */,
-				A0F7C7771CDCA08B0034489E /* JFTextStorage.m */,
-				A0F7C7791CDCA0A50034489E /* JFLayoutManager.h */,
-				A0F7C77A1CDCA0A50034489E /* JFLayoutManager.m */,
-				A0F7C77C1CDCA0EF0034489E /* JFTextContainer.h */,
-				A0F7C77D1CDCA0EF0034489E /* JFTextContainer.m */,
-				A0F7C77F1CDCA11C0034489E /* JFTextKitDefines.h */,
-				A0F7C7801CDCA11C0034489E /* JFTextKitDefines.m */,
-			);
-			name = JFTextKit;
 			sourceTree = "<group>";
 		};
 		A0FBAF7E1CD879C7006E0A8C /* JFHTMLAttributedStringBuilder */ = {
@@ -351,23 +351,23 @@
 				A0DCD6591CD33B450036579A /* ViewController.m in Sources */,
 				A062EF851CD9EA7800EBD3E4 /* JFHTMLTextAttachmentElement.m in Sources */,
 				A0DCD67F1CD34FDD0036579A /* JFHTML.m in Sources */,
-				A0F7C7751CDCA0400034489E /* JFTextAttachment.m in Sources */,
-				A0F7C7781CDCA08B0034489E /* JFTextStorage.m in Sources */,
-				A0F7C7811CDCA11C0034489E /* JFTextKitDefines.m in Sources */,
 				A0DCD6821CD34FEC0036579A /* JFHTMLNode.m in Sources */,
-				A0F7C77B1CDCA0A50034489E /* JFLayoutManager.m in Sources */,
+				A07A84CF1CE9A76100177E83 /* JFAttributedLabel.m in Sources */,
+				A07A84D31CE9A76100177E83 /* JFTextKitDefines.m in Sources */,
+				A07A84D01CE9A76100177E83 /* JFLayoutManager.m in Sources */,
 				A0DCD6561CD33B450036579A /* AppDelegate.m in Sources */,
 				A0DCD6531CD33B450036579A /* main.m in Sources */,
-				A0F7C7711CDCA0110034489E /* JFAttributedLabel.m in Sources */,
-				A0F7C77E1CDCA0EF0034489E /* JFTextContainer.m in Sources */,
 				A0DCD6851CD35F510036579A /* JFHTMLElement.m in Sources */,
 				A062EF7C1CD9874000EBD3E4 /* JFHTMLBreakElement.m in Sources */,
+				A07A84D21CE9A76100177E83 /* JFTextContainer.m in Sources */,
 				A062EF821CD9DED300EBD3E4 /* DTHTMLParser.m in Sources */,
 				A0DCD6791CD33B850036579A /* JFHTMLParser.m in Sources */,
 				A0DCD6891CD362F90036579A /* JFHTMLDocument.m in Sources */,
 				A0FBAF841CD8A0BE006E0A8C /* JFHTMLTextElement.m in Sources */,
+				A07A84D41CE9A76100177E83 /* JFTextStorage.m in Sources */,
 				A02BADFC1CE1CC2700E67A7C /* NSAttributedString+DDHTML.m in Sources */,
 				A0FBAF811CD879DF006E0A8C /* JFHTMLAttributedStringBuilder.m in Sources */,
+				A07A84D11CE9A76100177E83 /* JFTextAttachment.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
