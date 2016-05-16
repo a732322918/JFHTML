@@ -10,4 +10,18 @@
 
 @interface JFLayoutManager : NSObject
 
+// 来自JFLayoutManager
+
+// 更改1次
+
+// 更改2次
+
+// 更改3次 －－JFHtml
+
+// 更改4次 －－JFHtml
+
+
+// 更改5次 －－ JFTextKitDemo
+
+// 更改6次 －－ JFTextKitDemo
 @end
