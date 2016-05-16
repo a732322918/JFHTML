@@ -77,34 +77,21 @@
         [builtString appendAttributedString:attributedString];
     }
     
+    
+    
     if ([self.name isEqualToString:@"h1"] || [self.name isEqualToString:@"h2"] || [self.name isEqualToString:@"h3"] || [self.name isEqualToString:@"h4"] || [self.name isEqualToString:@"h5"] || [self.name isEqualToString:@"h6"]) {
-        [builtString appendAttributedString:[[NSAttributedString alloc] initWithString:@"\n" attributes:[self attributesForAttributedStringRepresentation]]];
+
+            [self appendEndOfParagraphTo:builtString];
+        
     }
     
     if ([self.name isEqualToString:@"p"]) {
-        [builtString appendAttributedString:[[NSAttributedString alloc] initWithString:@"\n" attributes:[self attributesForAttributedStringRepresentation]]];
+        
+            [self appendEndOfParagraphTo:builtString];
+        
     }
     
     return builtString;
-}
-
-- (NSString *)description {
-    NSString *result = @"";
-    NSUInteger indentLevel = 0;
-    for (JFHTMLElement *element in self.childNodes) {
-        
-        NSString *placeholder = @"";
-        for (int i = 0; i < indentLevel; i++) {
-            placeholder = [placeholder stringByAppendingString:@"   "];
-        }
-        
-        result = [result stringByAppendingString:placeholder];
-        result = [result stringByAppendingString:element.name];
-        result = [result stringByAppendingString:element.description];
-        indentLevel++;
-    }
-    
-    return result;
 }
 
 - (NSMutableParagraphStyle *)paragraphStyle {
@@ -113,4 +100,47 @@
     }
     return _paragraphStyle;
 }
+
+- (void)appendEndOfParagraphTo:(NSMutableAttributedString *)attributedString
+{
+    NSUInteger length = [attributedString length];
+    if (length <= 0) {
+        NSAttributedString *newlineString = [[NSAttributedString alloc] initWithString:@"\n" attributes:[self attributesForAttributedStringRepresentation]];
+        [attributedString appendAttributedString:newlineString];
+        return;
+    }
+    
+    NSRange effectiveRange;
+    NSDictionary *attributes = [attributedString attributesAtIndex:length-1 effectiveRange:&effectiveRange];
+    
+    NSMutableDictionary *appendAttributes = [NSMutableDictionary dictionary];
+    
+    id font = [attributes objectForKey:NSFontAttributeName];
+    
+    if (font)
+    {
+        [appendAttributes setObject:font forKey:NSFontAttributeName];
+    }
+    
+    id paragraphStyle = [attributes objectForKey:NSParagraphStyleAttributeName];
+    
+    if (paragraphStyle)
+    {
+        [appendAttributes setObject:paragraphStyle forKey:NSParagraphStyleAttributeName];
+    }
+    
+    
+    
+    id foregroundColor = [attributes objectForKey:NSForegroundColorAttributeName];
+    
+    if (foregroundColor)
+    {
+        [appendAttributes setObject:foregroundColor forKey:NSForegroundColorAttributeName];
+    }
+    
+    
+    NSAttributedString *newlineString = [[NSAttributedString alloc] initWithString:@"\n" attributes:appendAttributes];
+    [attributedString appendAttributedString:newlineString];
+}
+
 @end
