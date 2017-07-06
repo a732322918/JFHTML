@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A02BADFC1CE1CC2700E67A7C /* NSAttributedString+DDHTML.m in Sources */ = {isa = PBXBuildFile; fileRef = A02BADFB1CE1CC2700E67A7C /* NSAttributedString+DDHTML.m */; };
+		A033041B1F0E290F00683DD7 /* NSAttributedString+DMHTML.m in Sources */ = {isa = PBXBuildFile; fileRef = A033041A1F0E290F00683DD7 /* NSAttributedString+DMHTML.m */; };
+		A03304211F0E2C0700683DD7 /* DMHTMLImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = A03304201F0E2C0700683DD7 /* DMHTMLImageView.m */; };
 		A062EF7C1CD9874000EBD3E4 /* JFHTMLBreakElement.m in Sources */ = {isa = PBXBuildFile; fileRef = A062EF7B1CD9874000EBD3E4 /* JFHTMLBreakElement.m */; };
 		A062EF821CD9DED300EBD3E4 /* DTHTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = A062EF811CD9DED300EBD3E4 /* DTHTMLParser.m */; };
 		A062EF851CD9EA7800EBD3E4 /* JFHTMLTextAttachmentElement.m in Sources */ = {isa = PBXBuildFile; fileRef = A062EF841CD9EA7800EBD3E4 /* JFHTMLTextAttachmentElement.m */; };
@@ -26,13 +28,15 @@
 		A0DCD6611CD33B450036579A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0DCD65F1CD33B450036579A /* LaunchScreen.storyboard */; };
 		A0DCD66C1CD33B450036579A /* JFHTMLTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DCD66B1CD33B450036579A /* JFHTMLTests.m */; };
 		A0DCD6791CD33B850036579A /* JFHTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DCD6781CD33B850036579A /* JFHTMLParser.m */; };
-		A0DCD67B1CD33BBA0036579A /* libxml2.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A0DCD67A1CD33BBA0036579A /* libxml2.2.tbd */; };
 		A0DCD67F1CD34FDD0036579A /* JFHTML.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DCD67E1CD34FDD0036579A /* JFHTML.m */; };
 		A0DCD6821CD34FEC0036579A /* JFHTMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DCD6811CD34FEC0036579A /* JFHTMLNode.m */; };
 		A0DCD6851CD35F510036579A /* JFHTMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DCD6841CD35F510036579A /* JFHTMLElement.m */; };
 		A0DCD6891CD362F90036579A /* JFHTMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DCD6881CD362F90036579A /* JFHTMLDocument.m */; };
+		A0DECAE01F0E2F5400629784 /* libxml2.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A0DECADF1F0E2F5400629784 /* libxml2.2.tbd */; };
+		A0DECB081F0E386000629784 /* DMHTMLConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DECB071F0E386000629784 /* DMHTMLConfig.m */; };
 		A0FBAF811CD879DF006E0A8C /* JFHTMLAttributedStringBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FBAF801CD879DF006E0A8C /* JFHTMLAttributedStringBuilder.m */; };
 		A0FBAF841CD8A0BE006E0A8C /* JFHTMLTextElement.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FBAF831CD8A0BE006E0A8C /* JFHTMLTextElement.m */; };
+		E45DC16E59A08DDAE4AD901E /* libPods-JFHTML.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20E8B7B294E7DD1C7E804244 /* libPods-JFHTML.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,8 +50,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		20E8B7B294E7DD1C7E804244 /* libPods-JFHTML.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JFHTML.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FF3F96504007A2D36F95282 /* libPods-JFHTMLTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JFHTMLTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A02BADFA1CE1CC2700E67A7C /* NSAttributedString+DDHTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+DDHTML.h"; sourceTree = "<group>"; };
 		A02BADFB1CE1CC2700E67A7C /* NSAttributedString+DDHTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+DDHTML.m"; sourceTree = "<group>"; };
+		A03304191F0E290F00683DD7 /* NSAttributedString+DMHTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+DMHTML.h"; sourceTree = "<group>"; };
+		A033041A1F0E290F00683DD7 /* NSAttributedString+DMHTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+DMHTML.m"; sourceTree = "<group>"; };
+		A033041F1F0E2C0700683DD7 /* DMHTMLImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMHTMLImageView.h; sourceTree = "<group>"; };
+		A03304201F0E2C0700683DD7 /* DMHTMLImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMHTMLImageView.m; sourceTree = "<group>"; };
 		A062EF7A1CD9874000EBD3E4 /* JFHTMLBreakElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFHTMLBreakElement.h; sourceTree = "<group>"; };
 		A062EF7B1CD9874000EBD3E4 /* JFHTMLBreakElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFHTMLBreakElement.m; sourceTree = "<group>"; };
 		A062EF801CD9DED300EBD3E4 /* DTHTMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTHTMLParser.h; sourceTree = "<group>"; };
@@ -83,7 +93,6 @@
 		A0DCD66D1CD33B450036579A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0DCD6771CD33B850036579A /* JFHTMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFHTMLParser.h; sourceTree = "<group>"; };
 		A0DCD6781CD33B850036579A /* JFHTMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFHTMLParser.m; sourceTree = "<group>"; };
-		A0DCD67A1CD33BBA0036579A /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
 		A0DCD67D1CD34FDD0036579A /* JFHTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFHTML.h; sourceTree = "<group>"; };
 		A0DCD67E1CD34FDD0036579A /* JFHTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFHTML.m; sourceTree = "<group>"; };
 		A0DCD6801CD34FEC0036579A /* JFHTMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFHTMLNode.h; sourceTree = "<group>"; };
@@ -92,10 +101,16 @@
 		A0DCD6841CD35F510036579A /* JFHTMLElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFHTMLElement.m; sourceTree = "<group>"; };
 		A0DCD6871CD362F90036579A /* JFHTMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFHTMLDocument.h; sourceTree = "<group>"; };
 		A0DCD6881CD362F90036579A /* JFHTMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFHTMLDocument.m; sourceTree = "<group>"; };
+		A0DECADD1F0E2F4D00629784 /* libYYText.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libYYText.a; path = "Pods/../build/Debug-iphoneos/YYText/libYYText.a"; sourceTree = "<group>"; };
+		A0DECADF1F0E2F5400629784 /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
+		A0DECB061F0E386000629784 /* DMHTMLConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMHTMLConfig.h; sourceTree = "<group>"; };
+		A0DECB071F0E386000629784 /* DMHTMLConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMHTMLConfig.m; sourceTree = "<group>"; };
 		A0FBAF7F1CD879DF006E0A8C /* JFHTMLAttributedStringBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFHTMLAttributedStringBuilder.h; sourceTree = "<group>"; };
 		A0FBAF801CD879DF006E0A8C /* JFHTMLAttributedStringBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFHTMLAttributedStringBuilder.m; sourceTree = "<group>"; };
 		A0FBAF821CD8A0BE006E0A8C /* JFHTMLTextElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFHTMLTextElement.h; sourceTree = "<group>"; };
 		A0FBAF831CD8A0BE006E0A8C /* JFHTMLTextElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFHTMLTextElement.m; sourceTree = "<group>"; };
+		E3C44989E8B9860A3662D53E /* Pods-JFHTML.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JFHTML.release.xcconfig"; path = "Pods/Target Support Files/Pods-JFHTML/Pods-JFHTML.release.xcconfig"; sourceTree = "<group>"; };
+		EAD6AB703D416FD8A58A9021 /* Pods-JFHTML.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JFHTML.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JFHTML/Pods-JFHTML.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +118,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0DCD67B1CD33BBA0036579A /* libxml2.2.tbd in Frameworks */,
+				A0DECAE01F0E2F5400629784 /* libxml2.2.tbd in Frameworks */,
+				E45DC16E59A08DDAE4AD901E /* libPods-JFHTML.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,6 +133,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		48C572492E6A11DF946A2981 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EAD6AB703D416FD8A58A9021 /* Pods-JFHTML.debug.xcconfig */,
+				E3C44989E8B9860A3662D53E /* Pods-JFHTML.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		50C9488436B2D1E12D3304A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A0DECADF1F0E2F5400629784 /* libxml2.2.tbd */,
+				A0DECADD1F0E2F4D00629784 /* libYYText.a */,
+				20E8B7B294E7DD1C7E804244 /* libPods-JFHTML.a */,
+				7FF3F96504007A2D36F95282 /* libPods-JFHTMLTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A02BADF91CE1CC2700E67A7C /* NSAttributedString+DDHTML */ = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +160,19 @@
 				A02BADFB1CE1CC2700E67A7C /* NSAttributedString+DDHTML.m */,
 			);
 			path = "NSAttributedString+DDHTML";
+			sourceTree = "<group>";
+		};
+		A03304181F0E290F00683DD7 /* DMHTML */ = {
+			isa = PBXGroup;
+			children = (
+				A0DECB061F0E386000629784 /* DMHTMLConfig.h */,
+				A0DECB071F0E386000629784 /* DMHTMLConfig.m */,
+				A033041F1F0E2C0700683DD7 /* DMHTMLImageView.h */,
+				A03304201F0E2C0700683DD7 /* DMHTMLImageView.m */,
+				A03304191F0E290F00683DD7 /* NSAttributedString+DMHTML.h */,
+				A033041A1F0E290F00683DD7 /* NSAttributedString+DMHTML.m */,
+			);
+			path = DMHTML;
 			sourceTree = "<group>";
 		};
 		A062EF7F1CD9DED300EBD3E4 /* DTHTMLParser */ = {
@@ -159,10 +208,11 @@
 		A0DCD6451CD33B450036579A = {
 			isa = PBXGroup;
 			children = (
-				A0DCD67A1CD33BBA0036579A /* libxml2.2.tbd */,
 				A0DCD6501CD33B450036579A /* JFHTML */,
 				A0DCD66A1CD33B450036579A /* JFHTMLTests */,
 				A0DCD64F1CD33B450036579A /* Products */,
+				48C572492E6A11DF946A2981 /* Pods */,
+				50C9488436B2D1E12D3304A7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -178,6 +228,7 @@
 		A0DCD6501CD33B450036579A /* JFHTML */ = {
 			isa = PBXGroup;
 			children = (
+				A03304181F0E290F00683DD7 /* DMHTML */,
 				A07A85231CE9AD3B00177E83 /* JFTextKit */,
 				A02BADF91CE1CC2700E67A7C /* NSAttributedString+DDHTML */,
 				A062EF7F1CD9DED300EBD3E4 /* DTHTMLParser */,
@@ -260,9 +311,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A0DCD6701CD33B450036579A /* Build configuration list for PBXNativeTarget "JFHTML" */;
 			buildPhases = (
+				4C30D72D66F601322B2EE7C5 /* [CP] Check Pods Manifest.lock */,
 				A0DCD64A1CD33B450036579A /* Sources */,
 				A0DCD64B1CD33B450036579A /* Frameworks */,
 				A0DCD64C1CD33B450036579A /* Resources */,
+				2AA6D23A0C509E5F8359212E /* [CP] Embed Pods Frameworks */,
+				880F3DAC78C8050F538B15C5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -297,7 +351,7 @@
 		A0DCD6461CD33B450036579A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = shujiong;
 				TargetAttributes = {
 					A0DCD64D1CD33B450036579A = {
@@ -348,6 +402,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2AA6D23A0C509E5F8359212E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JFHTML/Pods-JFHTML-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C30D72D66F601322B2EE7C5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		880F3DAC78C8050F538B15C5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JFHTML/Pods-JFHTML-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A0DCD64A1CD33B450036579A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -358,6 +460,7 @@
 				A0DCD67F1CD34FDD0036579A /* JFHTML.m in Sources */,
 				A0DCD6821CD34FEC0036579A /* JFHTMLNode.m in Sources */,
 				A07A85301CE9AD3B00177E83 /* JFAttributedLabel.m in Sources */,
+				A0DECB081F0E386000629784 /* DMHTMLConfig.m in Sources */,
 				A07A85341CE9AD3B00177E83 /* JFTextKitDefines.m in Sources */,
 				A07A85311CE9AD3B00177E83 /* JFLayoutManager.m in Sources */,
 				A0DCD6561CD33B450036579A /* AppDelegate.m in Sources */,
@@ -365,9 +468,11 @@
 				A0DCD6851CD35F510036579A /* JFHTMLElement.m in Sources */,
 				A062EF7C1CD9874000EBD3E4 /* JFHTMLBreakElement.m in Sources */,
 				A07A85331CE9AD3B00177E83 /* JFTextContainer.m in Sources */,
+				A03304211F0E2C0700683DD7 /* DMHTMLImageView.m in Sources */,
 				A07A853B1CE9C87300177E83 /* JFTextLink.m in Sources */,
 				A062EF821CD9DED300EBD3E4 /* DTHTMLParser.m in Sources */,
 				A0DCD6791CD33B850036579A /* JFHTMLParser.m in Sources */,
+				A033041B1F0E290F00683DD7 /* NSAttributedString+DMHTML.m in Sources */,
 				A0DCD6891CD362F90036579A /* JFHTMLDocument.m in Sources */,
 				A0FBAF841CD8A0BE006E0A8C /* JFHTMLTextElement.m in Sources */,
 				A07A85351CE9AD3B00177E83 /* JFTextStorage.m in Sources */,
@@ -429,8 +534,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -452,7 +559,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -474,8 +581,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -491,7 +600,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -501,11 +610,19 @@
 		};
 		A0DCD6711CD33B450036579A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAD6AB703D416FD8A58A9021 /* Pods-JFHTML.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/include/libxml2",
+				);
 				INFOPLIST_FILE = JFHTML/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/YYText",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = top.shujiong.JFHTML;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -513,11 +630,19 @@
 		};
 		A0DCD6721CD33B450036579A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3C44989E8B9860A3662D53E /* Pods-JFHTML.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/include/libxml2",
+				);
 				INFOPLIST_FILE = JFHTML/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/YYText",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = top.shujiong.JFHTML;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
